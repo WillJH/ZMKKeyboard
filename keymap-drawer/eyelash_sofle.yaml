@@ -13,7 +13,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - Ins
-  - $$mdi:apple-keyboard-caps$$
+  - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
@@ -59,11 +59,11 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:backspace-reverse-outline$$
   - LAYER 2
   - LAYER 3
-  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-caps$$
   LAYER 1:
   - {t: '`', s: '~'}
   - {t: '1', s: '!'}
