@@ -68,10 +68,10 @@
 
         layer_2 {
             bindings = <
-&trans      &kp F1           &kp F2          &kp F3           &kp F4           &kp F5        &msc SCRL_UP     &kp F6     &kp F7             &kp F8             &kp F9             &kp F10     &kp PRINTSCREEN
-&trans      &mkp MB4         &mkp LCLK       &mmv MOVE_UP    &mkp RCLK         &trans        &msc SCRL_DOWN   &trans     &trans             &mmv MOVE_UP       &kp F11            &kp F12     &trans
-&trans      &mkp MB5         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &trans        &msc SCRL_LEFT   &trans     &mmv MOVE_LEFT     &mmv MOVE_DOWN     &mmv MOVE_RIGHT    &trans      &trans
-&trans      &trans           &trans          &trans           &trans           &trans        &msc SCRL_RIGHT  &trans     &trans             &trans             &trans             &trans      &trans
+&trans      &kp F1           &kp F2          &kp F3           &kp F4           &kp F5        &kp UP_ARROW     &kp F6     &kp F7             &kp F8             &kp F9             &kp F10     &kp PRINTSCREEN
+&trans      &mkp MB4         &mkp LCLK       &mmv MOVE_UP    &mkp RCLK         &trans        &kp DOWN_ARROW   &trans     &trans             &msc SCRL_UP       &kp F11            &kp F12     &trans
+&trans      &mkp MB5         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &trans        &kp LEFT_ARROW   &trans     &msc SCRL_LEFT     &msc SCRL_DOWN     &msc SCRL_RIGHT    &trans      &trans
+&trans      &trans           &trans          &trans           &trans           &trans        &kp RIGHT_ARROW  &trans     &trans             &trans             &trans             &trans      &trans
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans        &mkp MCLK        &trans     &trans             &trans             &trans             &trans
             >;
 
