@@ -56,14 +56,14 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - LAYER 1
-  - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
+  - $$mdi:keyboard-tab$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
   - LAYER 2
   - LAYER 3
-  - $$mdi:apple-keyboard-caps$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   LAYER 1:
   - {t: '`', s: '~'}
   - {t: '1', s: '!'}
@@ -128,7 +128,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-caps$$
   LAYER 2:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
@@ -193,7 +193,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-caps$$
   LAYER 3:
   - {t: '$$mdi:transfer$$', type: trans}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
