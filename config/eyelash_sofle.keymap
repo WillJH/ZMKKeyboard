@@ -53,6 +53,7 @@
         left_bkt {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <17 16>;
+            layers = <0 1>
         };
 
         right_bkt {
