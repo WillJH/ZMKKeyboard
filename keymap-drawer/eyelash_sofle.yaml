@@ -14,7 +14,7 @@ layers:
   - {t: '0', s: )}
   - Ins
   - $$mdi:keyboard-tab$$
-  - Q
+  - {t: Q, h: Sft+Q}
   - W
   - E
   - R
