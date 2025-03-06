@@ -1,5 +1,5 @@
 layers:
-  LAYER 0:
+  AutoS:
   - $$mdi:keyboard-esc$$
   - {t: '1', h: Sft+1, s: '!'}
   - {t: '2', h: Sft+2, s: '@'}
@@ -55,16 +55,16 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - LAYER 1
+  - AutoS
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:keyboard-return$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
-  - LAYER 2
-  - LAYER 3
+  - Arr&Num
+  - Mouse
   - $$mdi:apple-keyboard-caps$$
-  LAYER 1:
+  Arr&Num:
   - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -126,10 +126,10 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-right-bold$$
-  - KP 0
+  - {t: KP 0, type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-caps$$
-  LAYER 2:
+  Mouse:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
@@ -192,9 +192,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - $$mdi:apple-keyboard-caps$$
-  LAYER 3:
+  Config:
   - {t: '$$mdi:transfer$$', type: trans}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
@@ -262,7 +262,7 @@ layers:
 combos:
 - p: [17, 16]
   k: {t: '[', s: '{'}
-  l: [LAYER 0, LAYER 1]
+  l: [AutoS, AutoS]
 - p: [21, 22]
   k: {t: ']', s: '}'}
 - p: [29, 30]
