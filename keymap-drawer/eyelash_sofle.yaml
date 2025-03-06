@@ -1,6 +1,6 @@
 layers:
   AutoS:
-  - $$mdi:keyboard-esc$$
+  - {t: Arr&Num, h: toggle}
   - {t: '1', h: Sft+1, s: '!'}
   - {t: '2', h: Sft+2, s: '@'}
   - {t: '3', h: Sft+3, s: '#'}
@@ -13,7 +13,7 @@ layers:
   - {t: '9', h: Sft+9, s: (}
   - {t: '0', h: Sft+0, s: )}
   - Ins
-  - $$mdi:keyboard-tab$$
+  - $$mdi:keyboard-esc$$
   - {t: Q, h: Sft+Q}
   - {t: W, h: Sft+W}
   - {t: E, h: Sft+E}
@@ -55,14 +55,79 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - AutoS
+  - Arr&Num
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:keyboard-return$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
-  - Arr&Num
   - Mouse
+  - Config
+  - $$mdi:apple-keyboard-caps$$
+  Normal:
+  - {t: Normal, h: toggle}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - $$mdi:arrow-up-bold$$
+  - {t: '6', s: ^}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
+  - Ins
+  - $$mdi:keyboard-esc$$
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - $$mdi:arrow-down-bold$$
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: HOME, h: END}
+  - $$mdi:apple-keyboard-shift$$
+  - A
+  - S
+  - D
+  - F
+  - G
+  - $$mdi:arrow-left-bold$$
+  - H
+  - J
+  - K
+  - L
+  - {t: ;, s: ':'}
+  - {t: '''', s: '"'}
+  - $$mdi:apple-keyboard-control$$
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - $$mdi:arrow-right-bold$$
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - {t: PgUp, h: PgDn}
+  - $$mdi:volume-off$$
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - Arr&Num
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:keyboard-return$$'}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:backspace-reverse-outline$$
+  - Mouse
+  - Config
   - $$mdi:apple-keyboard-caps$$
   Arr&Num:
   - {t: '`', s: '~'}
@@ -126,7 +191,7 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: KP 0, type: held alternate}
+  - KP 0
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-caps$$
   Mouse:
@@ -192,7 +257,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-caps$$
   Config:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -262,18 +327,25 @@ layers:
 combos:
 - p: [17, 16]
   k: {t: '[', s: '{'}
-  l: [AutoS, AutoS]
+  l: [AutoS, Normal]
 - p: [21, 22]
   k: {t: ']', s: '}'}
+  l: [AutoS, Normal]
 - p: [29, 30]
   k: (
+  l: [AutoS, Normal]
 - p: [34, 35]
   k: )
+  l: [AutoS, Normal]
 - p: [42, 43]
   k: '{'
+  l: [AutoS, Normal]
 - p: [47, 48]
   k: '}'
+  l: [AutoS, Normal]
 - p: [18, 20]
   k: {t: \, s: '|'}
+  l: [AutoS, Normal]
 - p: [31, 33]
   k: '|'
+  l: [AutoS, Normal]
