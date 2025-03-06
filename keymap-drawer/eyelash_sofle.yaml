@@ -57,13 +57,13 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - LAYER 1
   - $$mdi:keyboard-space$$
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:keyboard-return$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
   - LAYER 2
   - LAYER 3
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:apple-keyboard-caps$$
   LAYER 1:
   - {t: '`', s: '~'}
   - {t: '1', s: '!'}
@@ -72,8 +72,8 @@ layers:
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - KP PLUS
-  - KP MINUS
+  - {t: KP MULTIPLY, h: KP PLUS}
+  - {t: KP MINUS, h: KP DIVIDE}
   - KP DOT
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
@@ -88,7 +88,7 @@ layers:
   - KP 7
   - KP 8
   - KP 9
-  - KP 0
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '=', s: +}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -101,7 +101,7 @@ layers:
   - KP 4
   - KP 5
   - KP 6
-  - KP MULTIPLY
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - _
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -114,7 +114,7 @@ layers:
   - KP 1
   - KP 2
   - KP 3
-  - KP DIVIDE
+  - KP DOT
   - {t: \, s: '|'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-off$$
@@ -127,7 +127,7 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-right-bold$$
   - KP 0
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-caps$$
   LAYER 2:
   - {t: '$$mdi:transfer$$', type: trans}
