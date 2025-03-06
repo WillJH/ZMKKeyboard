@@ -57,7 +57,7 @@
 &kp TAB     AS(Q)          AS(W)          AS(E)      AS(R)         AS(T)               &kp DOWN_ARROW       AS(Y)           AS(U)         AS(I)         AS(O)          AS(P)         &as END HOME
 &kp LSHFT   AS(A)          AS(S)          AS(D)      AS(F)         AS(G)               &kp LEFT_ARROW       AS(H)           AS(J)         AS(K)         AS(L)          AS(SEMI)      AS(APOS)
 &kp LCTRL   AS(Z)          AS(X)          AS(C)      AS(V)         AS(B)               &kp RIGHT_ARROW      AS(N)           AS(M)         AS(COMMA)     AS(DOT)        AS(FSLH)      &as PAGE_DOWN PAGE_UP
-&kp C_MUTE  &kp LEFT_GUI   &kp LEFT_ALT   &mo 1      &kp SPACE     &pah ENTER TAB      &kp ENTER            &kp BACKSPACE   &kp DEL       &mo 2          &mo 3         &kp CAPS
+&kp C_MUTE  &kp LEFT_GUI   &kp LEFT_ALT   &mo 1      &kp SPACE     &as ENTER TAB      &kp ENTER            &kp BACKSPACE   &kp DEL       &mo 2          &mo 3         &kp CAPS
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
