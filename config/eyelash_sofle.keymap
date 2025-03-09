@@ -50,18 +50,6 @@
     combos {
         compatible = "zmk,combos";
 
-        left_bkt {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <17 16>;
-            layers = <0 1>;
-        };
-
-        right_bkt {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <21 22>;
-            layers = <0 1>;
-        };
-
         left_par {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <29 30>;
@@ -76,12 +64,24 @@
 
         left_brace {
             bindings = <&kp LEFT_BRACE>;
-            key-positions = <42 43>;
+            key-positions = <17 16>;
             layers = <0 1>;
         };
 
         right_brace {
             bindings = <&kp RIGHT_BRACE>;
+            key-positions = <21 22>;
+            layers = <0 1>;
+        };
+
+        left_bkt {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <42 43>;
+            layers = <0 1>;
+        };
+
+        right_bkt {
+            bindings = <&kp RIGHT_BRACKET>;
             key-positions = <47 48>;
             layers = <0 1>;
         };
