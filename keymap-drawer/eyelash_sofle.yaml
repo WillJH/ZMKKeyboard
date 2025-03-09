@@ -57,13 +57,13 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - Arr&Num
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:keyboard-return$$'}
+  - $$mdi:keyboard-tab$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
   - Mouse
   - Config
-  - $$mdi:apple-keyboard-caps$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   Normal:
   - {t: AutoS, h: toggle}
   - {t: '1', s: '!'}
@@ -122,13 +122,13 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - Arr&Num
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:keyboard-return$$'}
+  - $$mdi:keyboard-tab$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
   - Mouse
   - Config
-  - $$mdi:apple-keyboard-caps$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   Arr&Num:
   - {t: '`', s: '~'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -189,11 +189,11 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:mouse-left-click-outline$$
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-right-bold$$
+  - trans
+  - trans
   - KP 0
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-caps$$
   Mouse:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
