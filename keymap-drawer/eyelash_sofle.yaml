@@ -331,7 +331,7 @@ combos:
 - p: [34, 35]
   k: )
   l: [AutoS, Normal]
-- p: [17, 16]
+- p: [2, 3]
   k: '{'
   l: [AutoS, Normal]
 - p: [21, 22]
