@@ -328,19 +328,19 @@ combos:
 - p: [2, 3]
   k: (
   l: [AutoS, Normal]
-- p: [8, 9]
+- p: [9, 10]
   k: )
   l: [AutoS, Normal]
 - p: [4, 5]
   k: '{'
   l: [AutoS, Normal]
-- p: [6, 7]
+- p: [7, 8]
   k: '}'
   l: [AutoS, Normal]
 - p: [3, 4]
   k: {t: '[', s: '{'}
   l: [AutoS, Normal]
-- p: [7, 8]
+- p: [8, 9]
   k: {t: ']', s: '}'}
   l: [AutoS, Normal]
 - p: [18, 20]
