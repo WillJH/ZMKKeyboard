@@ -354,5 +354,5 @@ combos:
   k: {t: '$$mdi:keyboard-return$$', type: enter}
   l: [AutoS, Normal]
 - p: [56, 60]
-  k: {t: '$$mdi:keyboard-tab$$', h: 'Gui+$$mdi:keyboard-tab$$'}
+  k: {t: '$$mdi:keyboard-space$$', h: 'Gui+$$mdi:keyboard-space$$'}
   l: [AutoS, Normal]
