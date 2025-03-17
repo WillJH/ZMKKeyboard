@@ -99,8 +99,8 @@
         };
 
         d_enter{
-            bindings = <&kp PIPE>;
-            key-positions = <51 53>;
+            bindings = <&kp ENTER>;
+            key-positions = <57 58>;
             layers = <0 1>;
         };
     };
