@@ -106,7 +106,7 @@
         };
 
         combo_change_input{
-            bindings = <LGS(TAB)>;
+            bindings = <LGS(SPACE)>;
             key-positions = <56 60>;
             layers = <0 1>;
         };
