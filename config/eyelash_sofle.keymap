@@ -100,7 +100,7 @@
 
         d_enter{
             bindings = <&kp ENTER>;
-            key-positions = <57 58>;
+            key-positions = <57 59>;
             layers = <0 1>;
         };
     };
