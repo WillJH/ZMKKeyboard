@@ -97,6 +97,12 @@
             key-positions = <31 33>;
             layers = <0 1>;
         };
+
+        d_enter{
+            bindings = <&kp PIPE>;
+            key-positions = <51 53>;
+            layers = <0 1>;
+        };
     };
 
     keymap {
