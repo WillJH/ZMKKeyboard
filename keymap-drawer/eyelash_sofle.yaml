@@ -350,6 +350,6 @@ combos:
 - p: [31, 33]
   k: '|'
   l: [AutoS, Normal]
-- p: [51, 53]
-  k: '|'
+- p: [57, 58]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
   l: [AutoS, Normal]
