@@ -57,7 +57,7 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - Arr&Num
-  - {t: '$$mdi:keyboard-space$$', h: 'Gui+$$mdi:keyboard-space$$'}
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-tab$$', h: 'Gui+$$mdi:keyboard-tab$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -122,7 +122,7 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - Arr&Num
-  - {t: '$$mdi:keyboard-space$$', h: 'Gui+$$mdi:keyboard-space$$'}
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-tab$$', h: 'Gui+$$mdi:keyboard-tab$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -352,4 +352,7 @@ combos:
   l: [AutoS, Normal]
 - p: [57, 59]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
+  l: [AutoS, Normal]
+- p: [56, 60]
+  k: {t: '$$mdi:keyboard-return$$', h: 'Gui+$$mdi:keyboard-return$$'}
   l: [AutoS, Normal]
