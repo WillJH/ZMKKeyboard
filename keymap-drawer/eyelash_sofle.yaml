@@ -64,7 +64,7 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - Mouse
   - Config
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - Gui+$$mdi:keyboard-space$$
   Normal:
   - {t: AutoS, h: toggle}
   - {t: '1', s: '!'}
@@ -129,7 +129,7 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - Mouse
   - Config
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - Gui+$$mdi:keyboard-space$$
   Arr&Num:
   - {t: '`', s: '~'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
