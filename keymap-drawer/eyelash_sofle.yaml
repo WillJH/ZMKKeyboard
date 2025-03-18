@@ -58,7 +58,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - Arr&Num
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-tab$$', h: 'Gui+$$mdi:keyboard-tab$$'}
+  - $$mdi:keyboard-tab$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
@@ -123,7 +123,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - Arr&Num
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-tab$$', h: 'Gui+$$mdi:keyboard-tab$$'}
+  - $$mdi:keyboard-tab$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
@@ -352,7 +352,4 @@ combos:
   l: [AutoS, Normal]
 - p: [57, 59]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
-  l: [AutoS, Normal]
-- p: [56, 60]
-  k: {t: '$$mdi:keyboard-space$$', h: 'Gui+$$mdi:keyboard-space$$'}
   l: [AutoS, Normal]
