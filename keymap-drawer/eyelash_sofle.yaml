@@ -286,7 +286,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - RGB BRI
   - RGB BRD
-  - SCROLLLOCK
+  - LOCKING NUM
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - OUT USB
   - OUT BLE
@@ -299,7 +299,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Ins
+  - SCROLLLOCK
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - '&soft_off'
@@ -312,7 +312,7 @@ layers:
   - $$mdi:progress-download$$
   - '&soft_off'
   - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - SCROLLLOCK
+  - Ins
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
