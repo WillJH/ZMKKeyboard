@@ -173,8 +173,8 @@
 &none     &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP       &rgb_ug RGB_OFF     &rgb_ug RGB_ON     &rgb_ug RGB_EFF     &rgb_ug RGB_EFR      &rgb_ug RGB_SPI     &kp PRINTSCREEN
 &none     &bt BT_CLR    &bt BT_CLR_ALL  &none         &none        &none          &mmv MOVE_DOWN       &none               &none              &none               &rgb_ug RGB_BRI      &rgb_ug RGB_BRD     &kp SCROLLLOCK
 &none     &out OUT_USB  &out OUT_BLE    &none         &none        &none          &mmv MOVE_LEFT       &none               &none              &none               &none                &none               &kp INSERT
-&none     &sys_reset    &soft_off       &bootloader   &none        &none          &mmv MOVE_RIGHT      &none               &none              &sys_reset          &soft_off            &bootloader         &kp SCROLLLOCK
-&none     &none         &none           &none         &none        &none          &mkp LCLK            &none               &none              &none               &none               &none
+&none     &sys_reset    &soft_off       &bootloader   &none        &none          &mmv MOVE_RIGHT      &none               &none              &bootloader         &soft_off            &sys_reset          &kp SCROLLLOCK
+&none     &none         &none           &none         &none        &none          &mkp LCLK            &none               &none              &none               &none                &none
             >;
 
             display-name = "Config";
