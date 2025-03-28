@@ -175,11 +175,11 @@
 
         layer_4 {
             bindings = <
-                &none   &to Normal_Mode   &to Auto_Shift  &to Left_Only_Mode  &none  &none  &none  &none  &none  &none  &none  &none  &none
-                &none   &none             &none           &none               &none  &none  &none  &none  &none  &none  &none  &none  &none
-                &none   &none             &none           &none               &none  &none  &none  &none  &none  &none  &none  &none  &none
-                &none   &none             &none           &none               &none  &none  &none  &none  &none  &none  &none  &none  &none
-                &noneE  &none             &none           &none               &none  &none  &none  &none  &none  &none  &none  &none
+                &none   &to Normal_Mode   &to Auto_Shift_Mode  &to Left_Only_Mode  &none  &none  &none  &none  &none  &none  &none  &none  &none
+                &none   &none             &none                &none               &none  &none  &none  &none  &none  &none  &none  &none  &none
+                &none   &none             &none                &none               &none  &none  &none  &none  &none  &none  &none  &none  &none
+                &none   &none             &none                &none               &none  &none  &none  &none  &none  &none  &none  &none  &none
+                &noneE  &none             &none                &none               &none  &none  &none  &none  &none  &none  &none  &none
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             display-name = "Switch";
