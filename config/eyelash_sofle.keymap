@@ -151,11 +151,11 @@
 
         layer_2 {
             bindings = <
-                &mo Switch_Mode      AS(N1)         AS(N2)         AS(N3)             AS(N4)        AS(N5)            &kp UP_ARROW         AS(N6)           AS(N7)        AS(N8)               AS(N9)              AS(N0)          AS(EQUAL)
-                &kp ESC              AS(Q)          AS(W)          AS(E)              AS(R)         AS(T)             &kp DOWN_ARROW       AS(Y)            AS(U)         AS(I)                AS(O)               AS(P)           &kp ENTER
-                &kp LSHFT            AS(A)          AS(S)          AS(D)              AS(F)         AS(G)             &kp LEFT_ARROW       AS(H)            AS(J)         AS(K)                AS(L)               AS(SEMI)        AS(APOS)
-                &kp LCTRL            AS(Z)          AS(X)          AS(C)              AS(V)         AS(B)             &kp RIGHT_ARROW      AS(N)            AS(M)         AS(COMMA)            AS(DOT)             AS(FSLH)        &as PAGE_DOWN PAGE_UP
-                &kp C_MUTE           &kp LEFT_GUI   &kp LEFT_ALT   &mo Number_Mode    &kp SPACE     LGS(TAB)          &kp ENTER            &kp BACKSPACE    &kp DEL       &mo Mouse_Mode       &mo Config_Mode     &kp LG(SPACE)
+                &mo Switch_Mode      AS(N1)         AS(N2)         AS(N3)              AS(N4)        AS(N5)            &kp UP_ARROW         AS(N6)           AS(N7)        AS(N8)               AS(N9)              AS(N0)          AS(EQUAL)
+                &kp ESC              AS(Q)          AS(W)          AS(E)               AS(R)         AS(T)             &kp DOWN_ARROW       AS(Y)            AS(U)         AS(I)                AS(O)               AS(P)           &kp ENTER
+                &kp LSHFT            AS(A)          AS(S)          AS(D)               AS(F)         AS(G)             &kp LEFT_ARROW       AS(H)            AS(J)         AS(K)                AS(L)               AS(SEMI)        AS(APOS)
+                &kp LCTRL            AS(Z)          AS(X)          AS(C)               AS(V)         AS(B)             &kp RIGHT_ARROW      AS(N)            AS(M)         AS(COMMA)            AS(DOT)             AS(FSLH)        &as PAGE_DOWN PAGE_UP
+                &kp C_MUTE           &kp LEFT_GUI   &kp LEFT_ALT   &mo Arr_Num_Mode    &kp SPACE     LGS(TAB)          &kp ENTER            &kp BACKSPACE    &kp DEL       &mo Mouse_Mode       &mo Config_Mode     &kp LG(SPACE)
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             display-name = "Left";
@@ -163,11 +163,11 @@
 
         layer_3 {
             bindings = <
-                &mo Switch_Mode      AS(N6)          AS(N7)        AS(N8)             AS(N9)         AS(N0)          &kp UP_ARROW         AS(N6)          AS(N7)        AS(N8)             AS(N9)              AS(N0)        AS(EQUAL)
-                &kp ESC              AS(Y)           AS(U)         AS(I)              AS(O)          AS(P)           &kp DOWN_ARROW       AS(Y)           AS(U)         AS(I)              AS(O)               AS(P)         &kp ENTER
-                &kp LSHFT            AS(H)           AS(J)         AS(K)              AS(L)          AS(SEMI)        &kp LEFT_ARROW       AS(H)           AS(J)         AS(K)              AS(L)               AS(SEMI)      AS(APOS)
-                &kp LCTRL            AS(N)           AS(M)         AS(COMMA)          AS(DOT)        AS(FSLH)        &kp RIGHT_ARROW      AS(N)           AS(M)         AS(COMMA)          AS(DOT)             AS(FSLH)      &as PAGE_DOWN PAGE_UP
-                &kp C_MUTE           &kp LEFT_GUI   &kp LEFT_ALT   &mo Number_Mode    &kp SPACE      LGS(TAB)        &kp ENTER            &kp BACKSPACE   &kp DEL       &mo Mouse_Mode     &mo Config_Mode     &kp LG(SPACE)
+                &mo Switch_Mode      AS(N6)          AS(N7)        AS(N8)              AS(N9)         AS(N0)          &kp UP_ARROW         AS(N6)          AS(N7)        AS(N8)             AS(N9)              AS(N0)        AS(EQUAL)
+                &kp ESC              AS(Y)           AS(U)         AS(I)               AS(O)          AS(P)           &kp DOWN_ARROW       AS(Y)           AS(U)         AS(I)              AS(O)               AS(P)         &kp ENTER
+                &kp LSHFT            AS(H)           AS(J)         AS(K)               AS(L)          AS(SEMI)        &kp LEFT_ARROW       AS(H)           AS(J)         AS(K)              AS(L)               AS(SEMI)      AS(APOS)
+                &kp LCTRL            AS(N)           AS(M)         AS(COMMA)           AS(DOT)        AS(FSLH)        &kp RIGHT_ARROW      AS(N)           AS(M)         AS(COMMA)          AS(DOT)             AS(FSLH)      &as PAGE_DOWN PAGE_UP
+                &kp C_MUTE           &kp LEFT_GUI   &kp LEFT_ALT   &mo Arr_Num_Mode    &kp SPACE      LGS(TAB)        &kp ENTER            &kp BACKSPACE   &kp DEL       &mo Mouse_Mode     &mo Config_Mode     &kp LG(SPACE)
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             display-name = "Left-R";
