@@ -175,7 +175,7 @@
             display-name = "Left-2";
         };
 
-        layer_2 {
+        layer_4 {
             bindings = <
                 &kp GRAVE   &none           &none           &none            &none            &none            &mmv MOVE_UP         &as KP_MULTIPLY KP_PLUS      &as KP_DIVIDE KP_MINUS      &kp KP_DOT      AS(LEFT_BRACKET)     &kp RIGHT_BRACKET      AS(MINUS)
                 &trans      &none           &kp HOME        &kp UP_ARROW     &kp END          &none            &mmv MOVE_DOWN       &kp KP_N7                    &kp KP_N8                   &kp KP_N9       &none                &none                  &none
@@ -188,7 +188,20 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_3 {
+        layer_5 {
+            bindings = <
+                &none   &to Normal   &to Auto_Shift  &to Left_Only_1  &none  &none  &none  &none  &none  &none  &none  &none  &none
+                &none   &none        &none           &none            &none  &none  &none  &none  &none  &none  &none  &none  &none
+                &none   &none        &none           &none            &none  &none  &none  &none  &none  &none  &none  &none  &none
+                &none   &none        &none           &none            &none  &none  &none  &none  &none  &none  &none  &none  &none
+                &noneE  &none        &none           &none            &none  &none  &none  &none  &none  &none  &none  &none
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            display-name = "Swith M";
+        };
+
+        layer_6 {
             bindings = <
                 &trans      &kp F1         &kp F2          &kp F3           &kp F4           &kp F5        &kp UP_ARROW     &kp F6     &kp F7            &kp F8             &kp F9             &kp F10     &none
                 &trans      &none          &kp HOME        &mmv MOVE_UP     &kp END          &none         &kp DOWN_ARROW   &none      &mkp MB4          &msc SCRL_UP       &mkp MB5           &kp F11     &none
@@ -201,7 +214,7 @@
             sensor-bindings = <&scroll_left_right>;
         };
 
-        layer_4 {
+        layer_7 {
             bindings = <
                 &none     &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP       &rgb_ug RGB_OFF     &rgb_ug RGB_ON     &rgb_ug RGB_EFF     &rgb_ug RGB_EFR      &rgb_ug RGB_SPI     &kp PRINTSCREEN
                 &none     &bt BT_CLR    &bt BT_CLR_ALL  &none         &none        &none          &mmv MOVE_DOWN       &none               &none              &none               &rgb_ug RGB_BRI      &rgb_ug RGB_BRD     &kp LOCKING_NUM
