@@ -26,7 +26,7 @@ layers:
   - {t: I, h: Sft+I}
   - {t: O, h: Sft+O}
   - {t: P, h: Sft+P}
-  - {t: HOME, h: END}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-shift$$
   - {t: A, h: Sft+A}
   - {t: S, h: Sft+S}
@@ -91,7 +91,7 @@ layers:
   - I
   - O
   - P
-  - {t: HOME, h: END}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-shift$$
   - A
   - S
@@ -182,7 +182,7 @@ layers:
   - KP 3
   - KP DOT
   - {t: \, s: '|'}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
