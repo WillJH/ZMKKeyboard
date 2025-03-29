@@ -5,7 +5,7 @@
 #define Normal_Mode 0
 #define Auto_Shift_Mode 1
 #define Left_Only_Mode 2 
-#define Left_R 2 
+#define Left_R 3
 #define Arr_Num_Mode 4
 #define Mouse_Mode 5
 #define Config_Mode 6
