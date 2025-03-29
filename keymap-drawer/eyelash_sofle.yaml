@@ -104,7 +104,7 @@ layers:
   - {t: K, h: Sft+K}
   - {t: L, h: Sft+L}
   - {t: ;, h: Sft+;, s: ':'}
-  - {t: '''', s: '"'}
+  - {t: '''', h: Sft+', s: '"'}
   - $$mdi:apple-keyboard-control$$
   - {t: Z, h: Sft+Z}
   - {t: X, h: Sft+X}
@@ -343,7 +343,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&mkp MB4'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - '&mkp MB'
+  - '&mkp MB5'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-down-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -544,7 +544,4 @@ combos:
   l: [Normal, AutoS]
 - p: [31, 33]
   k: '|'
-  l: [Normal, AutoS]
-- p: [57, 59]
-  k: {t: '$$mdi:keyboard-return$$', type: enter}
   l: [Normal, AutoS]
