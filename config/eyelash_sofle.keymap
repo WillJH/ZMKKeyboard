@@ -5,7 +5,7 @@
 #define Normal_Mode 0
 #define Auto_Shift_Mode 1
 #define Left_Only_Mode 2 
-#define Left_R 2 
+#define Left_R 3
 #define Arr_Num_Mode 4
 #define Mouse_Mode 5
 #define Config_Mode 6
@@ -117,12 +117,6 @@
             layers = <0 1>;
         };
 
-        combo_enter{
-            bindings = <&kp ENTER>;
-            key-positions = <57 59>;
-            layers = <0 1>;
-        };
-
     };
 
     keymap {
@@ -133,7 +127,7 @@
                 &mo Switch_Mode   &kp N1        &kp N2        &kp N3                &kp N4        &kp N5            &kp UP_ARROW           &kp N6           &kp N7        &kp N8             &kp N9                &kp N0         AS(EQUAL)
                 &kp ESC           &kp Q         &kp W         &kp E                 &kp R         &kp T             &kp DOWN_ARROW         &kp Y            &kp U         &kp I              &kp O                 &kp P          &kp ENTER
                 &kp LSHFT         &kp A         &kp S         &kp D                 &kp F         &kp G             &kp LEFT_ARROW         &kp H            &kp J         &kp K              &kp L                 &kp SEMI       &kp APOS
-                &kp LCTRL         &kp Z         &kp X         &kp C                 &kp V         &kp B             &kp RIGHT_ARROW        &kp N            &kp M         &kp COMMA          &kp DOT               &kp FSLH       &as PAGE_DOWN PAGE_UP
+                &kp LCTRL         &kp Z         &kp X         &kp C                 &kp V         &kp B             &kp RIGHT_ARROW        &kp N            &kp M         &kp COMMA          &kp DOT               &kp FSLH       AS(MINUS)
                 &kp C_MUTE        &kp LEFT_GUI  &kp LEFT_ALT  &mo Arr_Num_Mode      &kp SPACE     &kp TAB           &kp ENTER              &kp BACKSPACE    &kp DEL       &mo Mouse_Mode     &mo Config_Mode       &kp LG(SPACE)
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -146,7 +140,7 @@
                 &mo Switch_Mode    AS(N1)         AS(N2)         AS(N3)             AS(N4)        AS(N5)              &kp UP_ARROW         AS(N6)           AS(N7)        AS(N8)               AS(N9)              AS(N0)           AS(EQUAL)
                 &kp ESC            AS(Q)          AS(W)          AS(E)              AS(R)         AS(T)               &kp DOWN_ARROW       AS(Y)            AS(U)         AS(I)                AS(O)               AS(P)            &kp ENTER
                 &kp LSHFT          AS(A)          AS(S)          AS(D)              AS(F)         AS(G)               &kp LEFT_ARROW       AS(H)            AS(J)         AS(K)                AS(L)               AS(SEMI)         AS(APOS)
-                &kp LCTRL          AS(Z)          AS(X)          AS(C)              AS(V)         AS(B)               &kp RIGHT_ARROW      AS(N)            AS(M)         AS(COMMA)            AS(DOT)             AS(FSLH)         &as PAGE_DOWN PAGE_UP
+                &kp LCTRL          AS(Z)          AS(X)          AS(C)              AS(V)         AS(B)               &kp RIGHT_ARROW      AS(N)            AS(M)         AS(COMMA)            AS(DOT)             AS(FSLH)         AS(MINUS)
                 &kp C_MUTE         &kp LEFT_GUI   &kp LEFT_ALT   &mo Arr_Num_Mode   &kp SPACE     LGS(TAB)            &kp ENTER            &kp BACKSPACE    &kp DEL       &mo Mouse_Mode       &mo Config_Mode     &kp LG(SPACE)
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -155,11 +149,11 @@
 
         layer_2 {
             bindings = <
-                &mo Switch_Mode      AS(N1)         AS(N2)         AS(N3)              AS(N4)        AS(N5)           &none  &none  &none  &none  &none  &none  &none
-                &kp ESC              AS(Q)          AS(W)          AS(E)               AS(R)         AS(T)            &none  &none  &none  &none  &none  &none  &none
-                &kp LSHFT            AS(A)          AS(S)          AS(D)               AS(F)         AS(G)            &none  &none  &none  &none  &none  &none  &none
-                &kp LCTRL            AS(Z)          AS(X)          AS(C)               AS(V)         AS(B)            &none  &none  &none  &none  &none  &none  &none
-                &kp C_MUTE           &kp LEFT_GUI   &kp LEFT_ALT   &mo Left_R          &kp SPACE     LGS(TAB)         &none  &none  &none  &none  &none  &none
+                &mo Switch_Mode      AS(N1)         AS(N2)         AS(N3)              AS(N4)                   AS(N5)         &none  &none  &none  &none  &none  &none  &none
+                &kp ESC              AS(Q)          AS(W)          AS(E)               AS(R)                    AS(T)          &none  &none  &none  &none  &none  &none  &none
+                &kp LSHFT            AS(A)          AS(S)          AS(D)               AS(F)                    AS(G)          &none  &none  &none  &none  &none  &none  &none
+                &kp LCTRL            AS(Z)          AS(X)          AS(C)               AS(V)                    AS(B)          &none  &none  &none  &none  &none  &none  &none
+                &kp C_MUTE           &kp LEFT_GUI   &kp LEFT_ALT   &mo Left_R          &lt Mouse_Mode SPACE     LGS(TAB)       &none  &none  &none  &none  &none  &none
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             display-name = "Left";
@@ -167,11 +161,11 @@
 
         layer_3 {
             bindings = <
-                &mo Switch_Mode      AS(N6)          AS(N7)        AS(N8)              AS(N9)           AS(N0)         &none  &none  &none  &none  &none  &none  &none
-                &kp ENTER            AS(Y)           AS(U)         AS(I)               AS(O)            AS(P)          &none  &none  &none  &none  &none  &none  &none
-                &kp LSHFT            AS(H)           AS(J)         AS(K)               AS(L)            AS(SEMI)       &none  &none  &none  &none  &none  &none  &none
-                &kp LCTRL            AS(N)           AS(M)         AS(COMMA)           AS(DOT)          AS(BSLH)       &none  &none  &none  &none  &none  &none  &none
-                &kp C_MUTE           &kp LEFT_GUI   &kp LEFT_ALT   &mo Arr_Num_Mode    &kp BACKSPACE    &kp DEL        &none  &none  &none  &none  &none  &none
+                &mo Switch_Mode      AS(N6)          AS(N7)         AS(N8)              AS(N9)           AS(N0)       &none  &none  &none  &none  &none  &none  &none
+                &kp ENTER            AS(Y)           AS(U)          AS(I)               AS(O)            AS(P)        &none  &none  &none  &none  &none  &none  &none
+                &kp LSHFT            AS(H)           AS(J)          AS(K)               AS(L)            AS(SEMI)     &none  &none  &none  &none  &none  &none  &none
+                &kp LCTRL            AS(N)           AS(M)          AS(COMMA)           AS(DOT)          AS(BSLH)     &none  &none  &none  &none  &none  &none  &none
+                &kp C_MUTE           &kp LEFT_GUI    &kp LEFT_ALT   &none               &kp BACKSPACE    &kp DEL      &none  &none  &none  &none  &none  &none
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             display-name = "Left-R";
@@ -192,7 +186,7 @@
         layer_5 {
             bindings = <
                 &trans      &kp F1         &kp F2             &kp F3            &kp F4           &kp F5            &kp UP_ARROW     &kp F6     &kp F7            &kp F8             &kp F9             &kp F10     &none
-                &trans      &none          &kp HOME           &mmv MOVE_UP      &kp END          &none             &kp DOWN_ARROW   &none      &mkp MB4          &msc SCRL_UP       &mkp MB5           &kp F11     &none
+                &trans      &none          &mkp MB4           &mmv MOVE_UP      &mkp MB5         &none             &kp DOWN_ARROW   &none      &kp PAGE_UP       &msc SCRL_UP       &kp PAGE_DOWN      &kp F11     &none
                 &trans      &none          &mmv MOVE_LEFT     &mmv MOVE_DOWN    &mmv MOVE_RIGHT  &none             &kp LEFT_ARROW   &none      &msc SCRL_LEFT    &msc SCRL_DOWN     &msc SCRL_RIGHT    &kp F12     &none
                 &trans      &none          &none              &none             &none            &none             &kp RIGHT_ARROW  &none      &none             &none              &none              &none       &none
                 &kp C_MUTE  &trans         &trans             &trans            &mkp LCLK        &mkp RCLK         &mkp MCLK        &none      &none             &none              &none              &none
