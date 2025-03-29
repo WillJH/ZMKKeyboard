@@ -149,11 +149,11 @@
 
         layer_2 {
             bindings = <
-                &mo Switch_Mode      AS(N1)         AS(N2)         AS(N3)              AS(N4)          AS(N5)         &none  &none  &none  &none  &none  &none  &none
-                &kp ESC              AS(Q)          AS(W)          AS(E)               AS(R)           AS(T)          &none  &none  &none  &none  &none  &none  &none
-                &kp LSHFT            AS(A)          AS(S)          AS(D)               AS(F)           AS(G)          &none  &none  &none  &none  &none  &none  &none
-                &kp LCTRL            AS(Z)          AS(X)          AS(C)               AS(V)           AS(B)          &none  &none  &none  &none  &none  &none  &none
-                &kp C_MUTE           &kp LEFT_GUI   &kp LEFT_ALT   &mo Left_R          &lt 3 SPACE     LGS(TAB)       &none  &none  &none  &none  &none  &none
+                &mo Switch_Mode      AS(N1)         AS(N2)         AS(N3)              AS(N4)                   AS(N5)         &none  &none  &none  &none  &none  &none  &none
+                &kp ESC              AS(Q)          AS(W)          AS(E)               AS(R)                    AS(T)          &none  &none  &none  &none  &none  &none  &none
+                &kp LSHFT            AS(A)          AS(S)          AS(D)               AS(F)                    AS(G)          &none  &none  &none  &none  &none  &none  &none
+                &kp LCTRL            AS(Z)          AS(X)          AS(C)               AS(V)                    AS(B)          &none  &none  &none  &none  &none  &none  &none
+                &kp C_MUTE           &kp LEFT_GUI   &kp LEFT_ALT   &mo Left_R          &lt Mouse_Mode SPACE     LGS(TAB)       &none  &none  &none  &none  &none  &none
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             display-name = "Left";
