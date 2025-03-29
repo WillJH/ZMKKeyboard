@@ -52,7 +52,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: PgUp, h: PgDn}
+  - {t: '-', h: Sft+-, s: _}
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
@@ -104,7 +104,7 @@ layers:
   - {t: K, h: Sft+K}
   - {t: L, h: Sft+L}
   - {t: ;, h: Sft+;, s: ':'}
-  - {t: '''', h: Sft+', s: '"'}
+  - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-control$$
   - {t: Z, h: Sft+Z}
   - {t: X, h: Sft+X}
@@ -117,7 +117,7 @@ layers:
   - {t: ',', h: 'Sft+,', s: <}
   - {t: ., h: Sft+., s: '>'}
   - {t: /, h: Sft+/, s: '?'}
-  - {t: PgUp, h: PgDn}
+  - {t: '-', h: Sft+-, s: _}
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
@@ -187,7 +187,7 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - Left
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', h: Left-R}
   - {t: '$$mdi:keyboard-tab$$', h: 'Gui+$$mdi:keyboard-tab$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -251,8 +251,8 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - Arr_Num
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:backspace$$', type: held}
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -341,15 +341,15 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - HOME
+  - '&mkp MB4'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - END
+  - '&mkp MB'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-down-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&mkp MB4'
+  - '&k PAGE_UP'
   - $$mdi:pan-up$$
-  - '&mkp MB5'
+  - PAGE DOW
   - F11
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -512,7 +512,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
