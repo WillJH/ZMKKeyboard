@@ -347,7 +347,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-down-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&k PAGE_UP'
+  - PgUp
   - $$mdi:pan-up$$
   - PAGE DOW
   - F11
