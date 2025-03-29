@@ -186,7 +186,7 @@
         layer_5 {
             bindings = <
                 &trans      &kp F1         &kp F2             &kp F3            &kp F4           &kp F5            &kp UP_ARROW     &kp F6     &kp F7            &kp F8             &kp F9             &kp F10     &none
-                &trans      &none          &mkp MB4           &mmv MOVE_UP      &mkp MB5         &none             &kp DOWN_ARROW   &none      &k PAGE_UP        &msc SCRL_UP       &kp PAGE_DOW       &kp F11     &none
+                &trans      &none          &mkp MB4           &mmv MOVE_UP      &mkp MB5         &none             &kp DOWN_ARROW   &none      &kp PAGE_UP       &msc SCRL_UP       &kp PAGE_DOW       &kp F11     &none
                 &trans      &none          &mmv MOVE_LEFT     &mmv MOVE_DOWN    &mmv MOVE_RIGHT  &none             &kp LEFT_ARROW   &none      &msc SCRL_LEFT    &msc SCRL_DOWN     &msc SCRL_RIGHT    &kp F12     &none
                 &trans      &none          &none              &none             &none            &none             &kp RIGHT_ARROW  &none      &none             &none              &none              &none       &none
                 &kp C_MUTE  &trans         &trans             &trans            &mkp LCLK        &mkp RCLK         &mkp MCLK        &none      &none             &none              &none              &none
