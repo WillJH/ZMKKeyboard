@@ -166,7 +166,7 @@
         };
 
         layer_3 {
-            bindings =
+            bindings = <
                 &mo Switch_Mode      AS(N6)          AS(N7)         AS(N8)              AS(N9)           AS(N0)       &none  &none  &none  &none  &none  &none  &none
                 &kp ENTER            AS(Y)           AS(U)          AS(I)               AS(O)            AS(P)        &none  &none  &none  &none  &none  &none  &none
                 &kp LSHFT            AS(H)           AS(J)          AS(K)               AS(L)            AS(SEMI)     &none  &none  &none  &none  &none  &none  &none
