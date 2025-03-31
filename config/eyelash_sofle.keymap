@@ -125,7 +125,6 @@
                 = <&macro_press &kp END &kp SEMI &kp ENTER>;
         };
     };
-};
 
     keymap {
         compatible = "zmk,keymap";
