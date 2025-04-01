@@ -6,10 +6,11 @@
 #define Auto_Shift_Mode 1
 #define Left_Only_Mode 2 
 #define Left_R 3
-#define Arr_Num_Mode 4
-#define Mouse_Mode 5
-#define Config_Mode 6
-#define Switch_Mode 7
+#define Number_Mode 4
+#define Cursor_Mode 5
+#define Mouse_Mode 6
+#define Config_Mode 7
+#define Switch_Mode 9
 
 #define AS(keycode) &as LS(keycode) keycode
 #define LGS(keycode) &as LG(keycode) keycode
@@ -118,11 +119,25 @@
         };
     };
     macros {
-        end_semi: end_semi {
+        end_line: end_line {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp END &kp SEMI &kp ENTER>;
+        };
+
+        new_line: new_line {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp END &kp ENTER>;
+        };
+
+        double_colon: double_colon {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp COLON &kp COLON>;
         };
     };
 
@@ -135,7 +150,7 @@
                 &kp ESC           &kp Q         &kp W         &kp E                 &kp R         &kp T             &kp DOWN_ARROW         &kp Y            &kp U         &kp I              &kp O                 &kp P          &kp ENTER
                 &kp LSHFT         &kp A         &kp S         &kp D                 &kp F         &kp G             &kp LEFT_ARROW         &kp H            &kp J         &kp K              &kp L                 &kp SEMI       &kp APOS
                 &kp LCTRL         &kp Z         &kp X         &kp C                 &kp V         &kp B             &kp RIGHT_ARROW        &kp N            &kp M         &kp COMMA          &kp DOT               &kp FSLH       AS(MINUS)
-                &kp C_MUTE        &kp LEFT_GUI  &kp LEFT_ALT  &mo Arr_Num_Mode      &kp SPACE     LGS(TAB)          &kp ENTER              &kp BACKSPACE    &kp DEL       &mo Mouse_Mode     &mo Config_Mode       &kp LG(SPACE)
+                &kp C_MUTE        &kp LEFT_GUI  &kp LEFT_ALT  &mo Cursor_Mode       &kp SPACE     LGS(TAB)          &kp ENTER              &kp BACKSPACE    &kp DEL       &mo Mouse_Mode     &mo Config_Mode       &kp LG(SPACE)
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             display-name = "Normal";
@@ -148,7 +163,7 @@
                 &kp ESC            AS(Q)          AS(W)          AS(E)              AS(R)         AS(T)               &kp DOWN_ARROW       AS(Y)            AS(U)         AS(I)                AS(O)               AS(P)            &kp ENTER
                 &kp LSHFT          AS(A)          AS(S)          AS(D)              AS(F)         AS(G)               &kp LEFT_ARROW       AS(H)            AS(J)         AS(K)                AS(L)               AS(SEMI)         AS(APOS)
                 &kp LCTRL          AS(Z)          AS(X)          AS(C)              AS(V)         AS(B)               &kp RIGHT_ARROW      AS(N)            AS(M)         AS(COMMA)            AS(DOT)             AS(FSLH)         AS(MINUS)
-                &kp C_MUTE         &kp LEFT_GUI   &kp LEFT_ALT   &mo Arr_Num_Mode   &kp SPACE     LGS(TAB)            &kp ENTER            &kp BACKSPACE    &kp DEL       &mo Mouse_Mode       &mo Config_Mode     &kp LG(SPACE)
+                &kp C_MUTE         &kp LEFT_GUI   &kp LEFT_ALT   &mo Cursor_Mode    &kp SPACE     LGS(TAB)            &kp ENTER            &kp BACKSPACE    &kp DEL       &mo Mouse_Mode       &mo Config_Mode     &kp LG(SPACE)
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             display-name = "AutoS";
@@ -181,12 +196,25 @@
         layer_4 {
             bindings = <
                 &kp GRAVE   &none                &none              &none             &none            &none               &mmv MOVE_UP         &as KP_MULTIPLY KP_PLUS      &as KP_DIVIDE KP_MINUS      &kp KP_DOT      AS(LEFT_BRACKET)     &kp RIGHT_BRACKET      AS(MINUS)
-                &trans      &none                &kp HOME           &kp UP_ARROW      &kp END          &none               &mmv MOVE_DOWN       &kp KP_N7                    &kp KP_N8                   &kp KP_N9       &none                &none                  &end_semi
-                &trans      &kp LC(LEFT_ARROW)  &kp LEFT_ARROW     &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp LC(RIGHT_ARROW) &mmv MOVE_LEFT       &kp KP_N4                    &kp KP_N5                   &kp KP_N6       &none                &none                  &none
+                &trans      &none                &none              &none             &none            &none               &mmv MOVE_DOWN       &kp KP_N7                    &kp KP_N8                   &kp KP_N9       &none                &none                  &kp ENTER
+                &trans      &none                &none              &none             &none            &none               &mmv MOVE_LEFT       &kp KP_N4                    &kp KP_N5                   &kp KP_N6       &none                &none                  &none
                 &trans      &none                &none              &none             &none            &none               &mmv MOVE_RIGHT      &kp KP_N1                    &kp KP_N2                   &kp KP_N3       &kp KP_DOT           &kp BSLH               &none
-                &kp C_MUTE  &trans               &trans             &trans            &kp DOWN_ARROW   &kp UP_ARROW        &mkp LCLK            &trans                       &trans                      &kp KP_N0       &none                &kp CAPS
+                &kp C_MUTE  &trans               &trans             &trans            &kp KP_PLUS      &kp KP_MINUS        &mkp LCLK            &kp KP_MULTIPLY              &kp KP_DIVIDE               &kp KP_N0       &none                &kp CAPS
             >;
-            display-name = "Arr_Num";
+            display-name = "Number";
+            sensor-bindings = <&scroll_up_down>;
+        };
+
+
+        layer_5 {
+            bindings = <
+                &kp GRAVE   &none                &none              &none             &none            &none               &mmv MOVE_UP         &none          &none             &none              &none       &none            &none
+                &trans      &none                &kp HOME           &kp UP_ARROW      &kp END          &none               &mmv MOVE_DOWN       &none          &none             &none              &none       &none            &none
+                &trans      &kp LC(LEFT_ARROW)   &kp LEFT_ARROW     &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp LC(RIGHT_ARROW) &mmv MOVE_LEFT       &none          &none             &none              &none       &double_colon    &none
+                &trans      &none                &none              &none             &none            &none               &mmv MOVE_RIGHT      &none          &none             &none              &none       &none            &none
+                &kp C_MUTE  &trans               &trans             &trans            &none            &none               &none                &kp new_line   &kp end_line      &none              &none       &none
+            >;
+            display-name = "Cursor";
             sensor-bindings = <&scroll_up_down>;
         };
 
@@ -216,11 +244,11 @@
 
         layer_7 {
             bindings = <
-                &none   &to Normal_Mode   &to Auto_Shift_Mode  &to Left_Only_Mode  &none  &none  &none  &none  &none  &none  &none  &none  &none
-                &none   &none             &none                &none               &none  &none  &none  &none  &none  &none  &none  &none  &none
-                &none   &none             &none                &none               &none  &none  &none  &none  &none  &none  &none  &none  &none
-                &none   &none             &none                &none               &none  &none  &none  &none  &none  &none  &none  &none  &none
-                &none   &none             &none                &none               &none  &none  &none  &none  &none  &none  &none  &none
+                &none   &to Normal_Mode   &to Auto_Shift_Mode  &to Left_Only_Mode  &to Number_Mode  &none  &none  &none  &none  &none  &none  &none  &none
+                &none   &none             &none                &none               &none            &none  &none  &none  &none  &none  &none  &none  &none
+                &none   &none             &none                &none               &none            &none  &none  &none  &none  &none  &none  &none  &none
+                &none   &none             &none                &none               &none            &none  &none  &none  &none  &none  &none  &none  &none
+                &none   &none             &none                &none               &none            &none  &none  &none  &none  &none  &none  &none
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             display-name = "Switch";
