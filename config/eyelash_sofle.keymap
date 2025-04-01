@@ -122,7 +122,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp END &kp SEMI &kp ENTER>;
+                = <&macro_tap &kp END &kp SEMI &kp ENTER>;
         };
     };
 
@@ -182,7 +182,7 @@
             bindings = <
                 &kp GRAVE   &none                &none              &none             &none            &none               &mmv MOVE_UP         &as KP_MULTIPLY KP_PLUS      &as KP_DIVIDE KP_MINUS      &kp KP_DOT      AS(LEFT_BRACKET)     &kp RIGHT_BRACKET      AS(MINUS)
                 &trans      &none                &kp HOME           &kp UP_ARROW      &kp END          &none               &mmv MOVE_DOWN       &kp KP_N7                    &kp KP_N8                   &kp KP_N9       &none                &none                  &end_semi
-                &trans      &kp LC(RIGHT_ARROW)  &kp LEFT_ARROW     &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp LC(RIGHT_ARROW) &mmv MOVE_LEFT       &kp KP_N4                    &kp KP_N5                   &kp KP_N6       &none                &none                  &none
+                &trans      &kp LC(LEFT_ARROW)  &kp LEFT_ARROW     &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp LC(RIGHT_ARROW) &mmv MOVE_LEFT       &kp KP_N4                    &kp KP_N5                   &kp KP_N6       &none                &none                  &none
                 &trans      &none                &none              &none             &none            &none               &mmv MOVE_RIGHT      &kp KP_N1                    &kp KP_N2                   &kp KP_N3       &kp KP_DOT           &kp BSLH               &none
                 &kp C_MUTE  &trans               &trans             &trans            &kp DOWN_ARROW   &kp UP_ARROW        &mkp LCLK            &trans                       &trans                      &kp KP_N0       &none                &kp CAPS
             >;
