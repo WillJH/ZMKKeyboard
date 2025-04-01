@@ -288,7 +288,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&end_semi'
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+$$mdi:arrow-right-bold$$
+  - Ctl+$$mdi:arrow-left-bold$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
