@@ -10,7 +10,7 @@
 #define Cursor_Mode 5
 #define Mouse_Mode 6
 #define Config_Mode 7
-#define Switch_Mode 9
+#define Switch_Mode 8
 
 #define AS(keycode) &as LS(keycode) keycode
 #define LGS(keycode) &as LG(keycode) keycode
@@ -242,7 +242,7 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_9 {
+        switch_layer {
             bindings = <
                 &none   &to Normal_Mode   &to Auto_Shift_Mode  &to Left_Only_Mode  &to Number_Mode  &none  &none  &none  &none  &none  &none  &none  &none
                 &none   &none             &none                &none               &none            &none  &none  &none  &none  &none  &none  &none  &none
