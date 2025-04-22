@@ -1,70 +1,5 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
-  Normal:
-  - Switch
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - $$mdi:arrow-up-bold$$
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - {t: '=', h: Sft+=, s: +}
-  - $$mdi:keyboard-esc$$
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - $$mdi:arrow-down-bold$$
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:apple-keyboard-shift$$
-  - A
-  - S
-  - D
-  - F
-  - G
-  - $$mdi:arrow-left-bold$$
-  - H
-  - J
-  - K
-  - L
-  - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-control$$
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - $$mdi:arrow-right-bold$$
-  - N
-  - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, s: '?'}
-  - {t: '-', h: Sft+-, s: _}
-  - $$mdi:volume-off$$
-  - $$mdi:apple-keyboard-command$$
-  - Number
-  - Cursor
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-tab$$', h: 'Gui+$$mdi:keyboard-tab$$'}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:backspace-reverse-outline$$
-  - Mouse
-  - $$mdi:apple-keyboard-option$$
-  - Gui+$$mdi:keyboard-space$$
   AutoS:
   - Switch
   - {t: '1', h: Sft+1, s: '!'}
@@ -117,6 +52,71 @@ layers:
   - {t: ',', h: 'Sft+,', s: <}
   - {t: ., h: Sft+., s: '>'}
   - {t: /, h: Sft+/, s: '?'}
+  - {t: '-', h: Sft+-, s: _}
+  - $$mdi:volume-off$$
+  - $$mdi:apple-keyboard-command$$
+  - Number
+  - Cursor
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-tab$$', h: 'Gui+$$mdi:keyboard-tab$$'}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:backspace-reverse-outline$$
+  - Mouse
+  - $$mdi:apple-keyboard-option$$
+  - Gui+$$mdi:keyboard-space$$
+  Normal:
+  - Switch
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - $$mdi:arrow-up-bold$$
+  - {t: '6', s: ^}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
+  - {t: '=', h: Sft+=, s: +}
+  - $$mdi:keyboard-esc$$
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - $$mdi:arrow-down-bold$$
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:apple-keyboard-shift$$
+  - A
+  - S
+  - D
+  - F
+  - G
+  - $$mdi:arrow-left-bold$$
+  - H
+  - J
+  - K
+  - L
+  - {t: ;, s: ':'}
+  - {t: '''', s: '"'}
+  - $$mdi:apple-keyboard-control$$
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - $$mdi:arrow-right-bold$$
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
   - {t: '-', h: Sft+-, s: _}
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-command$$
@@ -455,6 +455,71 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  BlueT:
+  - Switch
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '5', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - RGB OFF
+  - RGB ON
+  - RGB EFF
+  - RGB EFR
+  - RGB SPI
+  - PRINTSCREEN
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:bluetooth-off$$
+  - BT CLR ALL
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - RGB BRI
+  - RGB BRD
+  - LOCKING NUM
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - OUT USB
+  - OUT BLE
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - SCROLLLOCK
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - '&soft_off'
+  - $$mdi:progress-download$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:progress-download$$
+  - '&soft_off'
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - Ins
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   Config:
   - Switch
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
@@ -588,25 +653,25 @@ layers:
 combos:
 - p: [2, 3]
   k: (
-  l: [Normal, AutoS]
+  l: [AutoS, Normal]
 - p: [9, 10]
   k: )
-  l: [Normal, AutoS]
+  l: [AutoS, Normal]
 - p: [4, 5]
   k: '{'
-  l: [Normal, AutoS]
+  l: [AutoS, Normal]
 - p: [7, 8]
   k: '}'
-  l: [Normal, AutoS]
+  l: [AutoS, Normal]
 - p: [3, 4]
   k: {t: '[', s: '{'}
-  l: [Normal, AutoS]
+  l: [AutoS, Normal]
 - p: [8, 9]
   k: {t: ']', s: '}'}
-  l: [Normal, AutoS]
+  l: [AutoS, Normal]
 - p: [18, 20]
   k: {t: \, s: '|'}
-  l: [Normal, AutoS]
+  l: [AutoS, Normal]
 - p: [31, 33]
   k: '|'
-  l: [Normal, AutoS]
+  l: [AutoS, Normal]
