@@ -629,8 +629,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: Config, h: toggle}
-  - {t: BT&RGB, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: BT&RGB, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
