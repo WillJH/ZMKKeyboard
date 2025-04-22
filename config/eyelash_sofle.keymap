@@ -248,7 +248,7 @@
                 &none   &none                 &none                &none               &none            &none  &none  &none  &none  &none  &none  &none  &none
                 &none   &none                 &none                &none               &none            &none  &none  &none  &none  &none  &none  &none  &none
                 &none   &none                 &none                &to Config_Mode     &none            &none  &none  &none  &none  &none  &none  &none  &none
-                &none   &none                 &none                &none               &none            &nonev&none  &none  &none  &none  &none  &none
+                &none   &none                 &none                &none               &none            &none  &none  &none  &none  &none  &none  &none
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             display-name = "Switch";
