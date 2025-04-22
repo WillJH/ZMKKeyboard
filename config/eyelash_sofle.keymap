@@ -198,8 +198,8 @@
                 &mo Switch_Mode   &none       &none       &none       &none            &none               &mmv MOVE_UP         &as KP_MULTIPLY KP_PLUS      &as KP_DIVIDE KP_MINUS      &kp KP_DOT      AS(LEFT_BRACKET)     &kp RIGHT_BRACKET      AS(MINUS)
                 &trans            &none       &none       &none       &none            &none               &mmv MOVE_DOWN       &kp KP_N7                    &kp KP_N8                   &kp KP_N9       &none                &none                  &kp ENTER
                 &trans            &none       &none       &none       &none            &none               &mmv MOVE_LEFT       &kp KP_N4                    &kp KP_N5                   &kp KP_N6       &none                &none                  &none
-                &trans            &none       &none       &none       &none            &none               &mmv MOVE_RIGHT      &kp KP_N1                    &kp KP_N2                   &kp KP_N3       &kp KP_DOT           &kp BSLH               &none
-                &kp C_MUTE        &trans      &trans      &trans      &kp KP_PLUS      &kp KP_MINUS        &mkp LCLK            &kp KP_MULTIPLY              &kp KP_DIVIDE               &kp KP_N0       &none                &kp CAPS
+                &trans            &none       &none       &none       &none            &none               &mmv MOVE_RIGHT      &kp KP_N1                    &kp KP_N2                   &kp KP_N3       &kp KP_DOT           &none                  &none
+                &kp C_MUTE        &trans      &trans      &trans      &kp KP_PLUS      &kp KP_MINUS        &mkp LCLK            &kp KP_MULTIPLY              &kp KP_DIVIDE               &kp KP_N0       &none                &none
             >;
             display-name = "Number";
             sensor-bindings = <&scroll_up_down>;
@@ -210,8 +210,8 @@
                 &kp GRAVE   &none                &none              &none             &none            &none               &mmv MOVE_UP         &none          &none             &none       &none       &none            &none
                 &trans      &none                &kp HOME           &kp UP_ARROW      &kp END          &none               &mmv MOVE_DOWN       &none          &none             &none       &none       &none            &none
                 &trans      &kp LC(LEFT_ARROW)   &kp LEFT_ARROW     &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp LC(RIGHT_ARROW) &mmv MOVE_LEFT       &none          &none             &none       &none       &double_colon    &none
-                &trans      &none                &none              &none             &none            &none               &mmv MOVE_RIGHT      &none          &none             &none       &none       &none            &none
-                &kp C_MUTE  &trans               &trans             &trans            &none            &none               &none                &new_line      &end_line         &none       &none       &none
+                &trans      &none                &none              &none             &none            &none               &mmv MOVE_RIGHT      &none          &none             &none       &none       &kp BSLH         &none
+                &kp C_MUTE  &trans               &trans             &trans            &none            &none               &none                &new_line      &end_line         &none       &none       &kp CAPS
             >;
             display-name = "Cursor";
             sensor-bindings = <&scroll_up_down>;
@@ -229,24 +229,24 @@
             sensor-bindings = <&scroll_left_right>;
         };
 
-        bluetooth_layer {
+        bluetooth_RGB_layer {
             bindings = <
                 &mo Switch_Mode     &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &mmv MOVE_UP         &rgb_ug RGB_OFF     &rgb_ug RGB_ON     &rgb_ug RGB_EFF     &rgb_ug RGB_EFR      &rgb_ug RGB_SPI     &kp PRINTSCREEN
                 &none               &bt BT_CLR    &bt BT_CLR_ALL  &none         &none         &none          &mmv MOVE_DOWN       &none               &none              &none               &rgb_ug RGB_BRI      &rgb_ug RGB_BRD     &kp LOCKING_NUM
-                &none               &out OUT_USB  &out OUT_BLE    &none         &none         &none          &mmv MOVE_LEFT       &none               &none              &none               &none                &none               &kp SCROLLLOCK
-                &none               &sys_reset    &soft_off       &bootloader   &none         &none          &mmv MOVE_RIGHT      &none               &none              &bootloader         &soft_off            &sys_reset          &kp INSERT
+                &none               &none         &none           &none         &none         &none          &mmv MOVE_LEFT       &none               &none              &none               &none                &none               &kp SCROLLLOCK
+                &none               &none         &none           &none         &none         &none          &mmv MOVE_RIGHT      &none               &none              &none               &none                &none               &kp INSERT
                 &none               &none         &none           &none         &none         &none          &mkp LCLK            &none               &none              &none               &none                &none
             >;
-            display-name = "BlueT";
+            display-name = "BT&RGB";
             sensor-bindings = <&scroll_up_down>;
         };
 
         config_layer {
             bindings = <
-                &mo Switch_Mode     &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &mmv MOVE_UP         &rgb_ug RGB_OFF     &rgb_ug RGB_ON     &rgb_ug RGB_EFF     &rgb_ug RGB_EFR      &rgb_ug RGB_SPI     &kp PRINTSCREEN
-                &none               &bt BT_CLR    &bt BT_CLR_ALL  &none         &none         &none          &mmv MOVE_DOWN       &none               &none              &none               &rgb_ug RGB_BRI      &rgb_ug RGB_BRD     &kp LOCKING_NUM
-                &none               &out OUT_USB  &out OUT_BLE    &none         &none         &none          &mmv MOVE_LEFT       &none               &none              &none               &none                &none               &kp SCROLLLOCK
-                &none               &sys_reset    &soft_off       &bootloader   &none         &none          &mmv MOVE_RIGHT      &none               &none              &bootloader         &soft_off            &sys_reset          &kp INSERT
+                &mo Switch_Mode     &none         &none           &none         &none         &none          &mmv MOVE_UP         &none               &none              &none               &none                &none         &kp PRINTSCREEN
+                &none               &none         &none           &none         &none         &none          &mmv MOVE_DOWN       &none               &none              &none               &none                &none         &kp LOCKING_NUM
+                &none               &none         &none           &none         &none         &none          &mmv MOVE_LEFT       &none               &none              &none               &none                &none         &kp SCROLLLOCK
+                &none               &sys_reset    &soft_off       &bootloader   &none         &none          &mmv MOVE_RIGHT      &none               &none              &bootloader         &soft_off            &sys_reset    &kp INSERT
                 &none               &none         &none           &none         &none         &none          &mkp LCLK            &none               &none              &none               &none                &none
             >;
             display-name = "Config";
@@ -258,7 +258,7 @@
                 &none   &to Auto_Shift_Mode   &to Normal_Mode      &to Left_Only_Mode  &to Number_Mode  &none  &none  &none  &none  &none  &none  &none  &none
                 &none   &none                 &none                &none               &none            &none  &none  &none  &none  &none  &none  &none  &none
                 &none   &none                 &none                &none               &none            &none  &none  &none  &none  &none  &none  &none  &none
-                &none   &none                 &none                &to Config_Mode     &none            &none  &none  &none  &none  &none  &none  &none  &none
+                &none   &none                 &none                &to Config_Mode     &to BlueT_Mode   &none  &none  &none  &none  &none  &none  &none  &none
                 &none   &none                 &none                &none               &none            &none  &none  &none  &none  &none  &none  &none
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
