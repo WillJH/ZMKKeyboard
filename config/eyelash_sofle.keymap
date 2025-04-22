@@ -2,15 +2,16 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
 
 // Define layer nick name.
-#define Normal_Mode 0
-#define Auto_Shift_Mode 1
+#define Auto_Shift_Mode 0
+#define Normal_Mode 1
 #define Left_Only_Mode 2 
 #define Left_R 3
 #define Number_Mode 4
 #define Cursor_Mode 5
 #define Mouse_Mode 6
-#define Config_Mode 7
-#define Switch_Mode 8
+#define BlueT_Mode 7
+#define Config_Mode 8
+#define Switch_Mode 9
 
 #define AS(keycode) &as LS(keycode) keycode
 #define LGS(keycode) &as LG(keycode) keycode
@@ -144,20 +145,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer_0 {
-            bindings = <
-                &mo Switch_Mode   &kp N1        &kp N2            &kp N3                &kp N4        &kp N5            &kp UP_ARROW           &kp N6           &kp N7        &kp N8             &kp N9             &kp N0         AS(EQUAL)
-                &kp ESC           &kp Q         &kp W             &kp E                 &kp R         &kp T             &kp DOWN_ARROW         &kp Y            &kp U         &kp I              &kp O              &kp P          &kp ENTER
-                &kp LSHFT         &kp A         &kp S             &kp D                 &kp F         &kp G             &kp LEFT_ARROW         &kp H            &kp J         &kp K              &kp L              &kp SEMI       &kp APOS
-                &kp LCTRL         &kp Z         &kp X             &kp C                 &kp V         &kp B             &kp RIGHT_ARROW        &kp N            &kp M         &kp COMMA          &kp DOT            &kp FSLH       AS(MINUS)
-                &kp C_MUTE        &kp LEFT_GUI  &mo Number_Mode   &mo Cursor_Mode       &kp SPACE     LGS(TAB)          &kp ENTER              &kp BACKSPACE    &kp DEL       &mo Mouse_Mode     &kp LEFT_ALT       &kp LG(SPACE)
-            >;
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-            display-name = "Normal";
-
-        };
-
-        layer_1 {
+        auto_s_layer {
             bindings = <
                 &mo Switch_Mode    AS(N1)         AS(N2)             AS(N3)             AS(N4)        AS(N5)              &kp UP_ARROW         AS(N6)           AS(N7)        AS(N8)               AS(N9)              AS(N0)           AS(EQUAL)
                 &kp ESC            AS(Q)          AS(W)              AS(E)              AS(R)         AS(T)               &kp DOWN_ARROW       AS(Y)            AS(U)         AS(I)                AS(O)               AS(P)            &kp ENTER
@@ -169,7 +157,19 @@
             display-name = "AutoS";
         };
 
-        layer_2 {
+        normal_layer {
+            bindings = <
+                &mo Switch_Mode   &kp N1        &kp N2            &kp N3                &kp N4        &kp N5            &kp UP_ARROW           &kp N6           &kp N7        &kp N8             &kp N9             &kp N0         AS(EQUAL)
+                &kp ESC           &kp Q         &kp W             &kp E                 &kp R         &kp T             &kp DOWN_ARROW         &kp Y            &kp U         &kp I              &kp O              &kp P          &kp ENTER
+                &kp LSHFT         &kp A         &kp S             &kp D                 &kp F         &kp G             &kp LEFT_ARROW         &kp H            &kp J         &kp K              &kp L              &kp SEMI       &kp APOS
+                &kp LCTRL         &kp Z         &kp X             &kp C                 &kp V         &kp B             &kp RIGHT_ARROW        &kp N            &kp M         &kp COMMA          &kp DOT            &kp FSLH       AS(MINUS)
+                &kp C_MUTE        &kp LEFT_GUI  &mo Number_Mode   &mo Cursor_Mode       &kp SPACE     LGS(TAB)          &kp ENTER              &kp BACKSPACE    &kp DEL       &mo Mouse_Mode     &kp LEFT_ALT       &kp LG(SPACE)
+            >;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            display-name = "Normal";
+        };
+
+        left_layer {
             bindings = <
                 &mo Switch_Mode      AS(N1)         AS(N2)         AS(N3)              AS(N4)                   AS(N5)         &none  &none  &none  &none  &none  &none  &none
                 &kp ESC              AS(Q)          AS(W)          AS(E)               AS(R)                    AS(T)          &none  &none  &none  &none  &none  &none  &none
@@ -181,7 +181,7 @@
             display-name = "Left";
         };
 
-        layer_3 {
+        left_r_layer {
             bindings = <
                 &mo Switch_Mode      AS(N6)          AS(N7)         AS(N8)              AS(N9)           AS(N0)       &none  &none  &none  &none  &none  &none  &none
                 &kp ENTER            AS(Y)           AS(U)          AS(I)               AS(O)            AS(P)        &none  &none  &none  &none  &none  &none  &none
@@ -193,7 +193,7 @@
             display-name = "Left-R";
         };
 
-        layer_4 {
+        number_layer {
             bindings = <
                 &mo Switch_Mode   &none       &none       &none       &none            &none               &mmv MOVE_UP         &as KP_MULTIPLY KP_PLUS      &as KP_DIVIDE KP_MINUS      &kp KP_DOT      AS(LEFT_BRACKET)     &kp RIGHT_BRACKET      AS(MINUS)
                 &trans            &none       &none       &none       &none            &none               &mmv MOVE_DOWN       &kp KP_N7                    &kp KP_N8                   &kp KP_N9       &none                &none                  &kp ENTER
@@ -205,8 +205,7 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-
-        layer_6 {
+        cursor_layer {
             bindings = <
                 &kp GRAVE   &none                &none              &none             &none            &none               &mmv MOVE_UP         &none          &none             &none       &none       &none            &none
                 &trans      &none                &kp HOME           &kp UP_ARROW      &kp END          &none               &mmv MOVE_DOWN       &none          &none             &none       &none       &none            &none
@@ -218,7 +217,7 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_7 {
+        mouse_layer {
             bindings = <
                 &trans      &kp F1         &kp F2             &kp F3            &kp F4           &kp F5            &kp UP_ARROW     &kp F6     &kp F7            &kp F8             &kp F9             &kp F10     &none
                 &trans      &none          &mkp MB4           &mmv MOVE_UP      &mkp MB5         &mkp LCLK         &kp DOWN_ARROW   &none      &kp PAGE_UP       &msc SCRL_UP       &kp PAGE_DOWN      &kp F11     &none
@@ -230,7 +229,19 @@
             sensor-bindings = <&scroll_left_right>;
         };
 
-        layer_8 {
+        bluetooth_layer {
+            bindings = <
+                &mo Switch_Mode     &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &mmv MOVE_UP         &rgb_ug RGB_OFF     &rgb_ug RGB_ON     &rgb_ug RGB_EFF     &rgb_ug RGB_EFR      &rgb_ug RGB_SPI     &kp PRINTSCREEN
+                &none               &bt BT_CLR    &bt BT_CLR_ALL  &none         &none         &none          &mmv MOVE_DOWN       &none               &none              &none               &rgb_ug RGB_BRI      &rgb_ug RGB_BRD     &kp LOCKING_NUM
+                &none               &out OUT_USB  &out OUT_BLE    &none         &none         &none          &mmv MOVE_LEFT       &none               &none              &none               &none                &none               &kp SCROLLLOCK
+                &none               &sys_reset    &soft_off       &bootloader   &none         &none          &mmv MOVE_RIGHT      &none               &none              &bootloader         &soft_off            &sys_reset          &kp INSERT
+                &none               &none         &none           &none         &none         &none          &mkp LCLK            &none               &none              &none               &none                &none
+            >;
+            display-name = "BlueT";
+            sensor-bindings = <&scroll_up_down>;
+        };
+
+        config_layer {
             bindings = <
                 &mo Switch_Mode     &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &mmv MOVE_UP         &rgb_ug RGB_OFF     &rgb_ug RGB_ON     &rgb_ug RGB_EFF     &rgb_ug RGB_EFR      &rgb_ug RGB_SPI     &kp PRINTSCREEN
                 &none               &bt BT_CLR    &bt BT_CLR_ALL  &none         &none         &none          &mmv MOVE_DOWN       &none               &none              &none               &rgb_ug RGB_BRI      &rgb_ug RGB_BRD     &kp LOCKING_NUM
