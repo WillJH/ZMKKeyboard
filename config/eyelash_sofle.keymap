@@ -255,11 +255,11 @@
 
         switch_layer {
             bindings = <
-                &none   &to Auto_Shift_Mode   &to Normal_Mode      &to Left_Only_Mode  &to Number_Mode  &none  &none  &none  &none  &none  &none  &none  &none
-                &none   &none                 &none                &none               &none            &none  &none  &none  &none  &none  &none  &none  &none
-                &none   &none                 &none                &none               &none            &none  &none  &none  &none  &none  &none  &none  &none
-                &none   &none                 &none                &to Config_Mode     &to BlueT_Mode   &none  &none  &none  &none  &none  &none  &none  &none
-                &none   &none                 &none                &none               &none            &none  &none  &none  &none  &none  &none  &none
+                &none   &to Auto_Shift_Mode   &to Normal_Mode      &to Left_Only_Mode  &to Number_Mode  &none              &none  &none  &none  &none  &none  &none  &none
+                &none   &none                 &none                &none               &none            &none              &none  &none  &none  &none  &none  &none  &none
+                &none   &none                 &none                &none               &none            &none              &none  &none  &none  &none  &none  &none  &none
+                &none   &none                 &none                &to Config_Mode     &none            &to BlueT_Mode     &none  &none  &none  &none  &none  &none  &none
+                &none   &none                 &none                &none               &none            &none              &none  &none  &none  &none  &none  &none
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             display-name = "Switch";
