@@ -123,7 +123,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp END &kp SEMI &kp ENTER>;
+                = <&macro_tap &kp END &kp COLON &kp ENTER>;
         };
 
         new_line: new_line {
@@ -207,7 +207,7 @@
         cursor_layer {
             bindings = <
                 AS(GRAVE)   &none                &none              &none             &none            &none               &mmv MOVE_UP         &none          &none             &none       &none       &none            &none
-                &trans      &none                &kp HOME           &kp UP_ARROW      &kp END          &none               &mmv MOVE_DOWN       &none          &none             &none       &none       &none            &kp LC(ENTER)
+                &trans      &none                &kp HOME           &kp UP_ARROW      &kp END          &none               &mmv MOVE_DOWN       &none          &none             &none       &none       &none            &new_line
                 &trans      &kp LC(LEFT_ARROW)   &kp LEFT_ARROW     &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp LC(RIGHT_ARROW) &mmv MOVE_LEFT       &none          &none             &none       &none       &double_colon    &none
                 &trans      &none                &none              &none             &none            &none               &mmv MOVE_RIGHT      &none          &none             &none       &none       &kp BSLH         &none
                 &kp C_MUTE  &trans               &trans             &trans            &none            &none               &none                &new_line      &end_line         &none       &trans      &kp CAPS
