@@ -351,7 +351,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: 'Ctl+$$mdi:keyboard-return$$', type: enter}
+  - '&new_line'
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+$$mdi:arrow-left-bold$$
   - $$mdi:arrow-left-bold$$
