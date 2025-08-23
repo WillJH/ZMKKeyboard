@@ -1,6 +1,7 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
 
+
 // Define layer nick name.
 #define Auto_Shift_Mode 0
 #define Normal_Mode 1
