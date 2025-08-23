@@ -190,7 +190,7 @@ layers:
   - Z
   - X
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - C
+  - X
   - V
   - Mouse
   - $$mdi:apple-keyboard-option$$
